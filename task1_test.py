@@ -11,3 +11,7 @@ def test2():
 if __name__ == "__main__":
   test1()
   test2()
+
+
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
