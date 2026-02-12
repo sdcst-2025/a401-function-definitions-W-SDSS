@@ -24,4 +24,6 @@ if __name__ == "__main__":
     assert sum(5,-32) == -27
     assert sum(5,2.5) == 7.5
     assert round(sum(5.1,2.3),1) == 7.4
+
+    print("successfully passed all tests")
     
