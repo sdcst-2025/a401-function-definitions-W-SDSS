@@ -11,21 +11,17 @@ assert hypotenuse(3,4,True) == 5
 """
 import math
 
-def hypotenuse(numbers):
-    isinstance(numbers, list)
-    while True:
-      min == min(numbers)
-      middle = max(numbers)
-      hypo = math.sqrt(min**2+middle**2)
-      print(f"the hypotenuse is {hypo}")
+def hypotenuse(a, b, hypo):
+    if hypo == True:
+        return math.sqrt(a**2 + b**2)
     else:
-       largest = max(numbers)
-       #amarino number no **2
-       side = largest**2-
-       print(f"the side is {side}")
+        largest = max(a, b)
+        smallest = min(a, b)
+        return math.sqrt(largest**2 - smallest**2)
+
 
 if __name__ == "__main__":
-    assert hypotenuse([3,4],True) == 5
-    assert hypotenuse([5,12],True) == 13
-    assert hypotenuse([3,5],False) == 4
-    assert hypotenuse([13,12],False) == 5
+    assert hypotenuse(3, 4,True) == 5
+    assert hypotenuse(5, 12, True) == 13
+    assert hypotenuse(3, 5, False) == 4
+    assert hypotenuse(13, 12, False) == 5

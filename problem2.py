@@ -10,12 +10,13 @@ Note that the coordinates should be signed (positive or negative) floats
 import math
 
 def distance(numbers1, numbers2):
-    if isinstance(numbers1 and numbers2, tuple):
+    if isinstance(numbers1, tuple):
         numbers1 = list(numbers1)
+    if isinstance(numbers2, tuple):
         numbers2 = list(numbers2)
-    one = numbers1[0]-numbers1[1]
-    two = numbers2[0]-numbers2[1]
-    return math.sqrt(one**2+two**2)
+    x = numbers2[0]-numbers1[0]
+    y = numbers2[1]-numbers1[1]
+    return math.sqrt(x**2 + y**2)
 
 if __name__ == "__main__":
     d = distance( (2,4) , (6,3) )
