@@ -11,7 +11,7 @@ Example: The factors of 10 are 1, 2, 5, 10
 
 def factors(x):
     if not isinstance(x, int) or x <= 0:
-        return print("invalid numbers")
+        pass
     l = []
     for i in range(1, x+1):
         if x%i == 0:
@@ -35,4 +35,4 @@ if __name__ == "__main__":
             print(", ", end="")
     else: print()
 
-print(factors(0))#invalid numbers to none no dotiramo ga hyouji sareru None ha hyouji sareruno nande
+    print(factors(0))
